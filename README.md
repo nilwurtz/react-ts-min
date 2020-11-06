@@ -1,22 +1,22 @@
 # React + Typescript minimum template
 
-## install packages
+## Install packages
 
 ```
 $ npm i
 ```
 
-## run dev server
+## Run dev server
 
-dev server running on localhost:8080.
+Dev server running on localhost:8080.
 
 ```
 $ npm run dev
 ```
 
-### change running port
+### Change running port
 
-edit `devServer.port` on webpack.config.js.
+Edit `devServer.port` on webpack.config.js.
 
 ## build
 
