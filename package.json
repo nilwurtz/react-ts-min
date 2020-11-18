@@ -5,7 +5,7 @@
   "main": "src/index.tsx",
   "scripts": {
     "build": "npm run typecheck && webpack --mode production",
-    "dev": "webpack serve",
+    "dev": "NODE_ENV=development webpack serve",
     "typecheck": "tsc -p . --noEmit"
   },
   "author": "ragnar1904",

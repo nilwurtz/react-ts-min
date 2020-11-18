@@ -2,6 +2,7 @@ const path = require("path");
 const HTMLPlugin = require("html-webpack-plugin");
 
 module.exports = {
+  mode: process.env.NODE_ENV === "production" ? "production" : "development",
   module: {
     rules: [
       {
@@ -20,13 +21,14 @@ module.exports = {
   },
   devServer: {
     port: 8080,
+    open: true,
     historyApiFallback: {
       rewrites: [{ from: /^\/*/, to: "/" }],
     },
   },
   plugins: [
     new HTMLPlugin({
-        template: path.join(__dirname, "src/index.html"),
+        template: path.join(__dirname, "public/index.html"),
     }),
   ],
 };
